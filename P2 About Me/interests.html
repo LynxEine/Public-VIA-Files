@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Home</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Caveat:wght@400;500;600;700&family=Amatic+SC:wght@400;700&family=League+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Handlee&family=League+Script&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/version5.css">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-top">
+                <h1>About me</h1>
+                <h3>page</h3>
+
+                <img src="images/guitar.png" alt="guitar" class="guitar">
+
+                <p class="month">September</p>
+                <p class="date">22</p>
+                <p class="welcome">Welcome to my website!</p>
+                
+            </div>
+
+            <div class="left-bottom">
+                <a href="">CV</a>
+                <a href="">PORTFOLIO</a>
+            </div>
+            <div class="lastUpdate">
+                <p class="lu">LAST UPDATED</p>
+                <p class="la">22.09.26</p>
+            </div>
+        </div>
+    
+        <div class="rightPC">
+            <nav class="nav">
+                <a href="index.html">home</a>
+            <a href="interests.html">interests</a>
+            </nav>
+            <div class="right">
+
+                <div class="box">
+                    <h2>Studying</h2>
+                    <div>
+                        <p >I'm studying SWE at VIA <br> right now. And I like to study in my spare <br> time, 
+                    it's relaxing to sit there and understand <br>consepts and expand my knowledge</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2 id="leftt">Creative</h2>
+                    <div>
+                        <p id="leftt">I like to draw. <br> This doesn't count as creative,<br> but who cares. 
+                        I play guitar and piano, <br>and I started playing in <br>2021 (self taught)</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Excercise</h2>
+                    <div>
+                        <p>I run anything from 3 to <br>20km and from 8 to 5:00 min/km.<br>
+                        I practice gymnastics from time to time, <br>and I used to go to the gym 
+                        but now I'm <br>excercising more at home</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+    const now = new Date();
+    document.querySelector(".date").textContent = String(now.getDate()).padStart(2, "0");
+    document.querySelector(".month").textContent = now.toLocaleString("en-US", { month: "long" });
+</script>
+
+
+
+</body>
+</html>

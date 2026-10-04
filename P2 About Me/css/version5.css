@@ -1,0 +1,351 @@
+
+
+html, body {
+  margin: 0;
+  font-family: "Comic Neue", sans-serif;
+  background: #fdfaf3;
+  color: #333;
+  min-height: 100%;
+  height: 100%;
+}
+
+
+/*                                    LEFT TOP                                LEFT TOP                                  LEFT TOP*/
+h1 {
+    font-family: "League Script", cursive;
+   font-size: 3.7rem;
+   margin-bottom: -30px;
+   font-weight: 200;
+}
+
+h3 {
+    font-size: 0.8rem;
+    margin-left: 180px;
+    font-weight: 2000;
+}
+
+.month {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-size: 3.4rem;
+    margin: 0;
+    padding-left: 90px;
+    background-color: #fcf3db;
+    width: auto;
+    margin-bottom: -24px;
+    padding-right: 13px;
+    text-align: right;
+}
+
+.date {
+    font-family: "Caveat", cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 250px;
+    
+    
+}
+
+.guitar {
+  width: 90px;
+  margin-bottom: -100px;
+  margin-right: 190px;
+}
+
+.welcome {
+  font-family: "Caveat", cursive;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+
+.lu {
+  border: 1px solid #ddb971;
+  margin: 0px;
+  background-color: #ddb971;
+  margin-bottom: -1px;
+}
+
+.la {
+  border: 1px solid #ddb971;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.lastUpdate {
+    margin-top: auto; 
+}
+
+
+/*                                    LEFT BOTTOM                                LEFT BOTTOM                                  LEFT BOTTOM*/
+
+
+.left-bottom a {
+  background: #f4de9d;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-weight: 1000;
+  border-radius: 5px;
+  color: white;
+}
+
+.left-bottom a:hover {
+  background: #ddb971;
+}
+
+
+
+
+
+/*                                    NAV                                NAV                                 NAV*/
+
+.nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.nav a {
+  background: #ebd4a6;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 20px;
+  height: 10px;
+  width: 10%;
+  min-width: 70px;
+  font-weight: 400;
+  color: white;
+
+}
+
+.nav a:hover{
+  background-color: #e7c487;
+}
+
+
+/*                                    RIGHT                                RIGHT                                 RIGHT*/
+
+.rightPC {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: auto;
+  padding-bottom: 40px;
+  margin-bottom: auto;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.right p {
+  font-family: "Handlee", cursive;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-box {
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-width: 300px;
+  width: 80%;
+  max-width: 800px;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: #fff2cc;
+  margin-bottom: 70px;
+}
+
+.walk{
+  width: 70px;
+}
+
+
+
+/*                                    RIGHT INTERESTS                                RIGHT INTERESTS                                 RIGHT*/
+
+.box {
+  width: 90%;
+  max-width: 750px;
+}
+
+.box div {
+  background-color: #fff2cc;
+  width: 100%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box div p{
+  padding: 20px;
+  text-align: left;
+  font-family: "Comic Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.box h2{
+  font-family: "Handlee", cursive;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: -25px;
+  padding-right: 20px;
+}
+
+#leftt {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+.left {
+  width: 280px;
+  padding: 20px;
+  background: #fff;
+  border-right: 2px solid #e0dcd5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px;
+  flex: 0 0 280px;
+  min-height: fit-content;
+  
+  
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+
+@media (max-width: 660px) {
+  .container {
+    display: grid;
+    grid-template-areas: 
+    "e"
+    "a"
+    "b"
+    "c"
+    "d";
+  }
+
+  .nav {
+    grid-area: e;
+  }
+  .rightPC {
+    display: contents;
+  }
+
+   .left {
+    display: contents;
+    border-right: none;
+    width: 100%;
+  }
+
+
+  .left-top {
+    grid-area: a;
+  }
+
+  .right {
+    grid-area: b;
+    margin-bottom: 50px;
+  }
+
+  .left-bottom {
+    grid-area: c;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .left-bottom a {
+    width: 200px;
+    margin: 10px;
+  }
+
+
+  .lastUpdate {
+    grid-area: d;
+    width: 130px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .lu {
+    border: 1px solid #d4ccba;
+    background-color: #d4ccba;
+  }
+
+  .la {
+    border: 1px solid #d4ccba;
+  }
+
+  .month {
+    text-align: center;
+    padding: 0;
+    margin-bottom: -10px;
+  }
+
+  .date {
+    padding-left: 0px;
+    padding-right: 140px;
+    margin-bottom: -25px;
+    font-weight: 900;
+    color: #d8bc8c;
+  }
+
+  .welcome {
+    padding-left: 80px;
+    text-decoration: underline #52514f 0.6px;
+  }
+
+  
+
+}
