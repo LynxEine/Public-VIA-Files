@@ -1,0 +1,142 @@
+html, body {
+    min-height: 100%;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.page{
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Comic Neue", sans-serif;
+
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    direction: rtl;
+    justify-content: start;
+}
+
+#bc {
+    background-color: #f5e1da;
+    height: 50px;
+    margin: 10px;
+    margin-top: 100px;
+    margin-bottom: -140px;
+}
+
+h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    //background-color: #c6a195;
+    color: #986a5a;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#projects div {
+    border: solid 1px #d8cac5;
+    border-radius: 10px;
+    margin: 30px;
+    direction: ltr;
+    margin-bottom: 40px;
+}
+
+h2 {
+    background-color: #f5e1da;
+    font-family: 'Courier New', Courier, monospace;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0px;
+    text-align: center;
+    color: #986a5a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 10px;
+    color: #986a5a;
+}
+
+p {
+    font-weight: 400;
+    margin: 10px;
+    color: #572c1e;
+    height: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+  margin-left: 10%;
+  margin-top: auto;
+  text-align: center;
+  width: auto;
+  gap: 20px;
+}
+
+nav a {
+  background: #986a5a;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 20px;
+  height: 10px;
+  width: 10%;
+  min-width: 70px;
+  font-weight: 800;
+  color: white;
+
+}
+
+nav a:hover{
+  background-color: #572c1e;
+}
+
+img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -4.2px;
+}
+
+
+img:hover {
+    filter: brightness(0.9);
+}
+
+
+
+#projects div div {
+    height:110px;
+}
+
+.placeholder {
+    opacity: 0.8;
+    border-radius: 6px;
+    height: 110px;
+}
